@@ -1,0 +1,149 @@
+#bodyhome{
+background-image: url("oneil.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-size: 1355px 800px;
+}
+
+
+body{
+background-image: url("Capture.png");
+background-repeat: no-repeat;
+background-color: lightgrey;
+background-size: cover;
+background-size: 1355px 800px;
+}
+
+#bodymenu{
+background-image: url("menu.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-size: 1355px 800px;
+}
+
+#toptitle {
+  width: 80%;
+  height: 100px;
+  position: absolute;
+  float: left;
+  top: 0;
+}
+
+#titlelogo{
+  width:18%;
+  float: right;
+  top:0;
+}
+
+#shoplogo {
+  top:0;
+  width: 75%;
+  float: right;
+  height:80%;
+
+}
+
+
+h1{
+  color:black;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+#socialmediabar{
+float:left;
+width:100px;
+height:500px;
+background-color: none;
+margin-top: 100px
+color:black;
+position: fixed;
+padding-top: 10px;
+}
+
+img {
+  width: 85px;
+  height: 85px;
+  float:left;
+}
+
+#menulinks{
+  float:right;
+}
+
+a{
+margin-left: 20px;
+font-size: 20px;
+text-decoration: none;
+}
+
+a:hover{
+  text-decoration: overline;
+  color: black;
+}
+
+#maincontent{
+  padding-top: 250px;
+  margin-left: 100px;
+  /*padding-left: 340px;*/
+  text-align: center;
+}
+
+table,th,td{
+  text-align: left;
+  margin-left: 100px;
+  height: 2px;
+  width:20%;
+}
+
+
+/*
+table {
+  float: center;
+  text-align: center;
+  height: 300px;
+  width:200px;
+} */
+
+
+#menutable{
+  border: solid 1px white;
+  width:40%;
+  float:left;
+  font-size:35px;
+  color: White;
+  border:solid 1px White;
+}
+
+#foodtable{
+float:right;
+margin-bottom: 500px;
+margin-right: 50px;
+font-size:35px;
+color: White;
+border:solid 1px White;
+}
+
+#hoursandmap {
+  padding-left: 50px;
+  width: 90%;
+}
+
+#openinghours {
+  margin-left: 350px;
+  font-size:25px;
+  float: center;
+  text-align: center;
+  width: 500px;
+  color: black;
+}
+
+
+p{
+  text-align: center;
+  font-size: 30px;
+  background-color:none;
+  margin-left:
+}
