@@ -3,6 +3,7 @@
 You can use the [editor on GitHub](https://github.com/codelikeagirlVodafoneIreland/Skibbereen/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Project 1: [Air Ambulance](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Skibbereen%20-%20Air%20Ambulance/project/index.html)
+
 Project 2:
 
 
