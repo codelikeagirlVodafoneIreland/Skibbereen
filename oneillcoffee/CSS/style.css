@@ -2,7 +2,7 @@
 background-image: url("oneil.jpg");
 background-repeat: no-repeat;
 background-size: cover;
-background-size: 1355px 800px;
+background-size: 100%;
 }
 
 
@@ -11,14 +11,14 @@ background-image: url("Capture.png");
 background-repeat: no-repeat;
 background-color: lightgrey;
 background-size: cover;
-background-size: 1355px 800px;
+background-size: 100%;
 }
 
 #bodymenu{
 background-image: url("menu.jpg");
 background-repeat: no-repeat;
 background-size: cover;
-background-size: 1355px 800px;
+background-size: 100%;
 }
 
 #toptitle {
