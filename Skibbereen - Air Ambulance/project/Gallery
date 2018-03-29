@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICAA</title>
+<link rel="stylesheet"type="text/CSS"href="CSS/IrishCommunityAirAmbulance.css">
+</head>
+<body>
+<h1>Irish Community Air Ambulance</h1>
+
+<div class="vertical-menu">
+  <a href="home.html" class="active">Home</a>
+  <a href="About.html"> About</a>
+  <a href="Aims.html">Aims</a>
+  <a href="Events/fundraising">Events/fundraising</a>
+  <a href="Donations">Donations</a>
+  <a href="Gallery">Gallery</a>
+  <a href="Links">Links</a>
+  <a href="Contact Us">Contact us</a>
+  <a href="Volunteers">Volunteers</a>
+</div>
+
+<h3><b>The aims of Irish Community Air Ambulance are to ensure that the <u>Right</u> people are in the <u>Right</u> place at the <u>Right</u> time with the <u>Right</u> equipment and the <u>Right</u> skills to achieve the
+<u>Right</u> outcome.</b></h3>
+</body>
+
+
+
+</html>
