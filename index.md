@@ -7,5 +7,5 @@ Project 2: [Guide to being a Teenager](https://codelikeagirlvodafoneireland.gith
 
 Project 3: [O'Neill's Cafe](https://codelikeagirlvodafoneireland.github.io/Skibbereen/oneillcoffee/index.html)
 
-Project 4: [Chunez] (https://codelikeagirlvodafoneireland.github.io/Skibbereen/Chunez/index.html)
+Project 4: [Chunez](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Chunez/index.html)
 
