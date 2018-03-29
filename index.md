@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/codelikeagirlVodafoneIrela
 
 Project 1: [Air Ambulance](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Skibbereen%20-%20Air%20Ambulance/project/index.html)
 
-Project 2:
+Project 2: [Guide to being a Teenager](Skibbereen/guide to being a teenager meme/index.html)
 
 
 
