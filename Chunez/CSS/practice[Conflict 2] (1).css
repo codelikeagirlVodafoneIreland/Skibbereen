@@ -1,0 +1,182 @@
+#logo{
+  height: 100px;
+  margin-left:460px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+#home{
+  font-family: serif;
+  font-size: 25px
+}
+
+.tab{
+  position: fixed;
+  background-color: #b32d00;
+  margin-left: -8px;
+  margin-right: -10px;
+  margin-top: -8px;
+  width: 100%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #CC3300;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    min-width: 266px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 0px; /*space between the boxes*/
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 265px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #b32d00;
+}
+#bgi{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+/*home page*/
+#spotlighttitle{
+  margin-left: 40px;
+}
+#spotlightgig{
+float: left;
+margin-left: 20px;
+word-wrap: break-word;
+}
+#hazelvid{float:right;}
+#gigs{
+width: 100px;
+height: 100px;
+margin-right: 300px;
+
+}
+table{
+  text-align: right;
+}
+.lorem{
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#audio{
+  color: black;
+}
+#video{
+  color: black;
+}
+#indie{
+  color: black;
+}
+#rock{
+  color: black;
+}
+#rap{
+  color: black;
+}
+#covers{
+  color: black;
+}
+#hazel{
+  color: black;
+}
+#junk{
+  color: black;
+}
+#jozi{
+  color: black;
+}
+#kit{
+  color: black;
+}
+#hazelsgig{
+  height: 400px;
+  margin-left: 20px;
+  border-style: solid;
+
+}
+
+}
+#jjunk{
+  border: solid;
+  height:400px;
+}
+#jozi2s{
+  margin-left:470px;
+}
+#wraptext{
+  float: right;
+  margin-bottom: 800px;
+}
+/*starting hazels page*/
+#hazelp{
+  border:solid;
+  height: 400px;
+}
+#htext{font-size:30px}
+/* events*/
+#eventstitle{
+  margin-left: 40px;
+}
+/*artist page*/
+#hazel10{
+  border: solid;
+  height:400px;
+}
+#james{
+  border: solid;
+  height:400px;
+}
+#jozia{
+  border: solid;
+  height:400px;
+}
+#kittt{
+  border: solid;
+  height:400px;
+}
+
+/*video*/
+#videofont{
+  font-size: 40px;
+}
