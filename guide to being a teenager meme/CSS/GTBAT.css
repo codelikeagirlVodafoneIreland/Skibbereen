@@ -1,0 +1,244 @@
+#Menu_1{
+  color: white;
+  font-size: 15px;
+  background-color: #008080;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  /*padding-top: 10px;*/
+}
+
+/*
+This was the logo image in the top left
+#MemeStar{
+  float: left;
+  height: 40px;
+  width: 40px;
+  }
+*/
+
+.top_menu_links{
+    margin-right: 20px;
+    border-right-color: Black;
+    border-right-style: solid;
+    font-weight: bold;
+    padding-right: 50px;
+  }
+
+#Search{
+  background-color: white;
+  text-align: left;
+  float: right;
+  margin-right: 50px;
+  width:100px;
+}
+
+#Menu_3a{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 280px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_3b{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 490px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 200px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_3c{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 1300px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_3d{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 700px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_3e{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 875px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_3f{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 45px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 420px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_3g{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 450px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 420px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_3h{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 80px;
+  height: 250px;
+  width: 70%;
+  color: black;
+  background: #ccffff;
+  padding-bottom: 420px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#Menu_4{
+  background-color: #008080;
+  align-items: center;
+  padding-left: 35%;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+#Instagram{
+  height: 50px;
+  width: 50px;
+}
+
+#ludgate{
+  height: 200px;
+  width: 500px;
+}
+
+#subjects{
+  height: 250px;
+  width: 200px;
+}
+
+#Spongebob{
+  height: 200px;
+  width: 300px;
+}
+
+#donttrustyourself{
+  height: 400px;
+  width: 700px;
+}
+
+#teens{
+  height: 300px;
+  width: 500px;
+}
+
+#friendship{
+  height: 200px;
+  width: 400px;
+}
+
+#MainHeading{
+  outline: solid;
+  outline-color: blue;
+  font-family: fantasy;
+  color: blue;
+}
+
+a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: #008080;
+}
+
+a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+body{
+  background:linear-gradient(white,#0086b3);
+}
+
+#mainpage{
+  background-image: url("evilpatrick.jpg");
+  background-size: cover;
+}
+
+#MainHome{
+  margin-left: 400px;
+  background-color: pink;
+  color: black;
+}
+
+#MainHome:hover{
+  text-decoration: none;
+  color: blue;
+  font-size: 30px;
+}
+
+h1{
+  font-family: sans-serif;
+
+}
+
+table,th,td{
+  text-align: center;
+  border:1px dashed blue;
+  margin-left:370px;
+}

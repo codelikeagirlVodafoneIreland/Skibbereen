@@ -1,0 +1,76 @@
+#top_menu{
+  align-content: center;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+#content{
+  padding-top: 5%;
+}
+
+h1{
+  color:magenta;
+  text-align:center;
+  background-color: blue;/*this just for a line*/
+}
+
+#basic_header{
+  background-color: black;
+  color: #FF0087;
+}
+
+h4{
+  color:red;
+  text-align: right;
+  background-color: black;
+}
+
+h6{
+  color: black;
+  background-color: red;
+}
+
+body {
+  color: purple;
+  background-color: pink;/*this changes the whole page*/
+}
+
+img {
+margin-left: 525px;
+  height: 250px;
+  width: 300px;
+  border: solid 5px blue;
+}
+
+#Silmarillon_1{
+  margin-left:1px;
+}
+a{
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+h2{
+  text-align: center;
+}
+table,th,td{
+  text-align: center;
+  font-family: verdana;
+  border:1px dashed blue;
+  margin-left:490px/*margin and padding move content left, right and centre*/
+}
+
+ ul{
+   padding-left: 650px
+ }
+
+ol{
+  padding-left: 650px
+}
