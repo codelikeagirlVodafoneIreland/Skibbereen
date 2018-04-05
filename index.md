@@ -9,3 +9,7 @@ Project 3: [O'Neill's Cafe](https://codelikeagirlvodafoneireland.github.io/Skibb
 
 Project 4: [Chunez](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Chunez/index.html)
 
+Project 5: [West Cork](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Westcork/index.html)
+
+Project 6: [Selfcare For Young Women](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Selfcareforyoungwomen/index.html)
+
