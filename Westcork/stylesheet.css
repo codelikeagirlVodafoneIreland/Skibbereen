@@ -1,0 +1,62 @@
+#sidemenu{
+  background-color: #A49B9C;
+  width: 150px;
+  position: fixed;
+}
+a{
+  text-decoration: none;
+
+
+}
+a:hover{
+  color: red;
+}
+
+
+body{
+  background-color: #DFC7C9;
+  }
+
+input{
+  float: right;
+}
+
+#bannerdiv{
+  padding-left: 150px;
+}
+
+#bannerimage{
+  width: 100%;
+}
+
+h1{
+  text-align:center;
+  font-family:sans-serif;
+}
+
+#InfoS{
+  margin-left: 170px;
+  font-family: sans-serif;
+}
+
+
+.HC{
+  float: left;
+  padding-left: 20px;
+  width: 100%;
+  /* height: 50px; */
+
+}
+
+.destinationimages {
+  width: 70%;
+  border: solid black 5px;
+  margin-left: 20px;
+}
+
+td {
+  width: 50%;
+  height: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

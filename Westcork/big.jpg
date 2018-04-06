@@ -1,0 +1,565 @@
+<!DOCTYPE html><html lang="None"><head><meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/><meta charset="utf-8"/><meta content="442774651127-0lprupt54gg0lo89ffrk3v3tlrc9v2a8.apps.googleusercontent.com" name="google-signin-client_id"/><script async="" defer="" src="https://apis.google.com/js/platform.js"></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script><script>
+  WebFont.load({
+    google: {
+      families: ['Droid Sans', 'Open Sans', 'Roboto']
+    }
+  });
+</script><meta content="Mapio.net" property="og:site_name"/><meta content="Rathbarry | Mapio.net" property="og:title"/><meta content="1624310224477395" property="fb:app_id"/><meta content="https://mapio.net/a/114381691/" property="og:url"/><meta content="Rathbarry, West Cork, County Cork, Munster, Ireland" property="og:description"/><meta content="website" property="og:type"/><link href="https://storage.googleapis.com/rovar/mujstorage2/mapio/mapio/js/jui/assets/ico/m144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/><link href="https://storage.googleapis.com/rovar/mujstorage2/mapio/mapio/js/jui/assets/ico/m114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/><link href="https://storage.googleapis.com/rovar/mujstorage2/mapio/mapio/js/jui/assets/ico/m72.png" rel="apple-touch-icon-precomposed" sizes="72x72"/><link href="https://storage.googleapis.com/rovar/mujstorage2/mapio/mapio/js/jui/assets/ico/m57.png" rel="apple-touch-icon-precomposed"/><link href="https://storage.googleapis.com/rovar/mujstorage2/mapio/mapio/js/jui/assets/ico/favicon.ico" rel="shortcut icon" type="image/x-icon"/><link href="https://storage.googleapis.com/rovar/mujstorage2/mapio/mapio/js/jui/assets/ico/favicon.ico" rel="icon" type="image/x-icon"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><link href="https://storage.googleapis.com/mapio-net-immo/leaflet.css" rel="stylesheet"/><script src="https://storage.googleapis.com/mapio-net-immo/leaflet.js"></script><link href="https://storage.googleapis.com/mapionet2/css/w3.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" rel="stylesheet"/><link href="https://storage.googleapis.com/rovar/mujstorage2/2busters/Leaflet.awesomem/dist/leaflet.awesome-markers.css" rel="stylesheet"/><title>Rathbarry | Mapio.net</title><style>a{ color:blue; } a.geo{text-decoration:none} #map-canvas,.cardholder, img.zoomg{width:100%} .cardholder,.domu {text-align:center} ul.pager{list-style:none} ul.pager li{display:inline; color:#00f;font-size:large; cursor:pointer; padding: 15px; } .city {display:none} #mcanvas{height:250px} #map-canvas{margin:auto} a.geo:hover{text-decoration:underline} .small{color:gray;font-size:smaller} body{ padding: 0px; background: #f6f7f9; font-family:'Open Sans',sans-serif; color:#1d2129; } .ui-corner-all{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0} .leaflet-popup-content-wrapper{ padding:1px; text-align:center; border-radius:3px; border:2px solid #fff; background:#fff } .galleria-image{ z-index: 0 !important; } #hypo_form{ width: 95%; max-width: 390px; border-radius: 0px; display: inline-block; padding: 15px; } .mapio_modal{ width: 95%; max-width: 390px; border-radius: 0px; margin: auto; padding: 15px; } #minimap{ background: #ffffff; min-width: 150px; height: 200px; border: white solid 4px; } .container2 { height: 1px; position: fixed; top: 0; left: 0; right:0; margin: auto; text-align: center; z-index: 100; } .container2 > div#minimap { margin: auto; max-width: 1200px; -webkit-box-shadow: -2px -10px 8px 5px rgba(71,71,71,0.49); -moz-box-shadow: -2px -10px 8px 5px rgba(71,71,71,0.49); box-shadow: -2px -10px 8px 5px rgba(71,71,71,0.49); } .container{ position:relative; top:200px; background-color: white; padding:4px; max-width:1200px; margin:5px auto 1200px; -webkit-box-shadow: -2px 1px 8px 5px rgba(71,71,71,0.49); -moz-box-shadow: -2px 1px 8px 5px rgba(71,71,71,0.49); box-shadow: -2px 1px 8px 5px rgba(71,71,71,0.49); } .container2{ padding-left: 323px; padding-right: 323px; } .adslot_2 { display: inline-block; width: 300px; height: 650px; } .adslot_1 { display: inline-block; width: 300px; height: 650px; } @media (max-width: 1200px) { .adslot_2 { display: none; } .w3-right { display: none; } .container2{ padding-left: 323px; padding-right: 0px; } .container2 > div#minimap { margin-right: 16px; } } @media (max-width: 770px) { .adslot_1 { display: none; } .adslot_2 { display: none; } .container2{ padding-left: 0px; padding-right: 0px; } .w3-right, .w3-left { display: none; } } .fish { display: none; margin:auto; margin-top:38px; } label{ margin-right:3px; } .w3-modal { z-index: 1000; } .error{ color:red; } .myButton { background-color:#ffffff; -moz-border-radius:1px; -webkit-border-radius:1px; border-radius:1px; border:1px solid #dcdcdc; display:inline-block; cursor:pointer; color:#666666; font-family:Arial; font-size:15px; font-weight:bold; padding:6px 24px; text-decoration:none; } .myButton:hover { background-color:#f6f6f6; } .myButton:active { position:relative; top:1px; } .domu { font-weight: 700; } .cardholder, footer div{text-align:center} .cardholder,footer,img.zoomg{width:100%} #mcanvas{height:250px} #map-canvas{margin:auto;width:100%} a.geo{text-decoration:none} a.geo:hover,footer a:hover,pre a:hover{text-decoration:underline} footer a,pre a{text-decoration:none} .small{color:gray;font-size:smaller} pre{ max-height:200px; border:0px dashed #c036ff; padding-top:10px; padding-left:10px; padding-right:20px; background-color: #e9ffe0; } .wrapped{white-space:pre;white-space:pre-wrap;white-space:pre-line;white-space:-o-pre-wrap; white-space:-moz-pre-wrap;word-wrap:break-word} .ui-corner-all{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0} footer a,footer a:hover{color:#fff} footer{background:rgba(0,0,0,.65);bottom:0;position:fixed} footer div{padding:0;margin:2px;top:0; font-size:80%;} form{ padding: 10px; } ul.navi{list-style-type:none;margin:5px;} ul.navi li{display:inline} ul.navi a{text-decoration:none} .vitem{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGUlEQVQIW2NM6fj/f04FIyMDEIAJGEDhAACOHQQEK+qzwwAAAABJRU5ErkJggg==); height:.25rem;content:" "; margin-top: 15px; } .vitem:hover{ background-color: #e9ebee; } .cardholder>span.small{color:gray;font-size:smaller} .numero{font-size:60px;color:red;font-weight: 700;} .leaflet-panel-layers-group{background:#fff} .leaflet-panel-layers{background:inherit;box-shadow:0 0 0 transparent} .leaflet-popup-content-wrapper{padding:1px;border-radius:3px;border:2px solid #fff;background:#fff} #ajaxform label{ text-align:left; } #ajaxform input { text-align:left; font-size:1.3em; border:solid 1px #ccc; margin: 5px; width: 180px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; } #ajaxform input{ -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; } #ajaxform{ text-align:left; } .clear { clear: both; } #main-content { margin-left: 175px; max-width: 600px; } #sidebar { width: 310px; float: left; padding: 0 0 0 15px; } .jv{ text-decoration:none; } .jv:hover{ text-decoration:underline; } .card { margin: auto; text-align: center; font-family: arial; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 300px; } .card:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); } .button4 { border: none; outline: 0; display: inline-block; padding: 8px; color: white; background-color: red; text-align: center; cursor: pointer; width: 100%; font-size: 18px; } a.fb { text-decoration: none; font-size: 22px; color: black; } .button4:hover{ opacity: 0.7; }</style><script src="https://storage.googleapis.com/mapionet2/readmore.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script><script src="https://storage.googleapis.com/mapionet2/jquery.lazyscript.min.js"></script><script src="https://storage.googleapis.com/mapionet2/jsts.min.js"></script><script>
+/* Lazy Load XT 1.1.0 | MIT License */
+!function(a){var b=a.lazyLoadXT,c=b.widgetAttr||"data-lazy-widget",d=/<!--([\s\S]*)-->/;b.selector+=",["+c+"]",a(document).on("lazyshow","["+c+"]",function(){var b,e=a(this),f=e,g=e.attr(c);g&&(f=a("#"+g)),f.length&&(b=d.exec(f.html()),b&&f.replaceWith(a.trim(b[1]))),e.triggerHandler("load")})}(window.jQuery||window.Zepto||window.$);
+</script><style>.fancybox-skin { position: relative; background: #f9f9f9; color: #444; text-shadow: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; } .fancybox-title-inside-wrap { padding-top: 0px; } a.ahover{ text-decoration: none; } a.ahover:hover{ text-decoration: underline; }</style><style>.tint-text { text-align: left; position: absolute; width: 100%; color: #fff; left: 0; bottom: 0; padding: 5px;; font-weight: bold; z-index:10; } .tint { position: relative; display: inline-block; cursor: pointer; padding: 0px; margin: 2px; } .tint:after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+75,000000+80,000000+93,000000+93&0+68,0.65+93,0.65+93 */ background: -moz-linear-gradient(top, rgba(0,0,0,0) 68%, rgba(0,0,0,0.18) 75%, rgba(0,0,0,0.31) 80%, rgba(0,0,0,0.65) 93%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, rgba(0,0,0,0) 68%,rgba(0,0,0,0.18) 75%,rgba(0,0,0,0.31) 80%,rgba(0,0,0,0.65) 93%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, rgba(0,0,0,0) 68%,rgba(0,0,0,0.18) 75%,rgba(0,0,0,0.31) 80%,rgba(0,0,0,0.65) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */ } .tint:hover:after { background: none; } .tint img{ object-fit:cover; width:199px; height: 199px; -webkit-box-shadow: rgba(0,0,0,.6) 3px 3px 3px; -moz-box-shadow: rgba(0,0,0,.6) 3px 3px 3px; box-shadow: rgba(0,0,0,.6) 3px 3px 3px; } .gall2{ text-align: center; } h1{ font-size:18px; font-family:'Open Sans',sans-serif; color: #1d2129; font-weight: bold; } a.openinz{ color:#1a0dab; font-weight: normal; } a.openinz:visited{ color: #609; } h2{ font-family:'Open Sans',sans-serif; font-size:18px; color: #1d2129; font-weight: bold; } .spacelabel {white-space: nowrap;} .circlex { background: rgba(255, 0, 0, 0.62); border:3px solid white; font-weight:bold; text-align:center; border-radius:50%; width: 18px; height: 18px; } a.impressum{ text-decoration:none; font-family: "Arial", "Helventica", sans-serif; } a.impressum:hover{ text-decoration:underline; } .map-legend{ background: rgba(255, 255, 255, 0.7); }</style><style type="text/css">.breadcrumb1 li { display: inline; font-size: 12px; } .breadcrumb1 span { color:gray; } .breadcrumb1 li+li:before { content:" » "; }</style><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/><script>
+     $(function() {
+
+$.fancybox.defaults.buttons = ['slideShow', 'fullScreen', 'close'];
+$.fancybox.defaults.loop = true;
+$.fancybox.defaults.hash = false;
+     });
+
+</script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/><!-- Start Alexa Certify Javascript --><script type="text/javascript">
+_atrk_opts = { atrk_acct:"0nABo1IWhe10Y8", domain:"mapio.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script><noscript>&lt;img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=0nABo1IWhe10Y8" style="display:none" height="1" width="1" alt="" /&gt;</noscript><!-- End Alexa Certify Javascript --></head><body id="backpicx"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9451501134190452",
+    enable_page_level_ads: true
+  });
+</script><div class="w3-row"><div class="w3-col w3-left w3-container w3-white" style="width:310px;padding: 0.01em 5px;"><!-- big1 --><ins class="adsbygoogle adslot_1" data-ad-client="ca-pub-9451501134190452" data-ad-slot="7048917728" style="display:inline-block;width:300px;height:600px"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><div class="w3-col w3-right w3-container w3-white" style="width:310px;padding: 0.01em 5px;"><!-- big2 --><ins class="adsbygoogle adslot_2" data-ad-client="ca-pub-9451501134190452" data-ad-slot="1002384127" style="display:inline-block;width:300px;height:600px"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><div class="w3-rest w3-container"><div id="fb-root"></div><script>
+lgs = {};
+fb_dik =  {"el": "el_GR", "eo": "eo_EO", "en": "en_US", "zh": "zh_CN", "vi": "vi_VN", "ca": "ca_ES", "it": "it_IT", "eu": "eu_ES", "ar": "ar_AR", "cs": "cs_CZ", "et": "et_EE", "gl": "gl_ES", "es": "es_ES", "ru": "ru_RU", "nl": "nl_NL", "pt": "pt_PT", "no": "nb_NO", "tr": "tr_TR", "lt": "lt_LT", "th": "th_TH", "ro": "ro_RO", "pl": "pl_PL", "fr": "fr_FR", "uk": "uk_UA", "hr": "hr_HR", "de": "de_DE", "da": "da_DK", "fa": "fa_IR", "hi": "hi_IN", "fi": "fi_FI", "hu": "hu_HU", "ja": "ja_JP", "he": "he_IL", "te": "te_IN", "nn": "nn_NO", "sr": "sr_RS", "ko": "ko_KR", "sv": "sv_SE", "sk": "sk_SK", "ms": "ms_MY", "sl": "sl_SI"};
+
+ var langsx = window.navigator.userLanguage || window.navigator.language;
+ lgss = langsx[0]+langsx[1];
+ lgs = fb_dik[lgss];
+
+if(lgs){}else{lgs = "en_UK";}
+
+    (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+
+  js.src = "//connect.facebook.net/" + lgs + "/sdk.js#xfbml=1&version=v2.6&appId=1624310224477395";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div class="container2" id="mapwrap"><div id="minimap"></div><a class="w3-btn-floating w3-white" id="marrowm" style="position: relative;top:-50px;"><i aria-hidden="true" class="fa fa-arrow-down"></i></a> <a class="w3-btn-floating w3-white" id="marrowp" style="position: relative;top:-50px;"><i aria-hidden="true" class="fa fa-arrow-up"></i></a></div><div class="container" id="mcont"><br/><div><ol class="breadcrumb1"><li><a class="geo" data-slug="14875607" href="/a/14875607/">Ireland</a></li><li><a class="geo" data-slug="14876577" href="/a/14876577/">Munster</a></li><li><a class="geo" data-slug="14879607" href="/a/14879607/">County Cork</a></li><li><a class="geo" data-slug="114379366" href="/a/114379366/">West Cork</a></li><li><span>Rathbarry</span></li></ol></div><div class="cardholder"><h1>Rathbarry</h1><div class="fb-send" data-href="https://mapio.net/a/114381691/"></div><div class="fb-save" data-size="small" data-uri="https://mapio.net/a/114381691/"></div><div class="fb-share-button" data-href="https://mapio.net/a/114381691/" data-layout="button" data-mobile-iframe="false"></div><div class="fb-like" data-action="like" data-href="https://mapio.net/a/114381691/" data-layout="button_count" data-share="false" data-show-faces="false"></div><br/><div class="w3-panel" style="text-align: center;"><!-- region1 --><ins class="adsbygoogle" data-ad-client="ca-pub-9451501134190452" data-ad-format="auto" data-ad-slot="8380448526" style="display:block"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><div class="list" id="childadmin"><a class="geochild geo" data-slug="114381587" href="/a/114381587/">Castlefreke</a> <a class="geochild geo" data-slug="114381594" href="/a/114381594/">Maulatrahane</a> <a class="geochild geo" data-slug="114381693" href="/a/114381693/">Castlefreke-island</a> <a class="geochild geo" data-slug="114381700" href="/a/114381700/">Milltown</a> <a class="geochild geo" data-slug="114381702" href="/a/114381702/">Camus</a> <a class="geochild geo" data-slug="114381696" href="/a/114381696/">Ballylibert</a> <a class="geochild geo" data-slug="114381697" href="/a/114381697/">Lisduff</a> <a class="geochild geo" data-slug="114381688" href="/a/114381688/">Kilkeran</a> <a class="geochild geo" data-slug="114381695" href="/a/114381695/">Ganniv Beg</a> <a class="geochild geo" data-slug="114381694" href="/a/114381694/">Ganniv More</a> <a class="geochild geo" data-slug="114381690" href="/a/114381690/">Dundeady</a> <a class="geochild geo" data-slug="114381692" href="/a/114381692/">Dunoure</a> <a class="geochild geo" data-slug="114381586" href="/a/114381586/">Castlefreke-Warren</a> <a class="geochild geo" data-slug="114381593" href="/a/114381593/">Carrigfadeen</a> <a class="geochild geo" data-slug="114381592" href="/a/114381592/">Gortagrenane</a> <a class="geochild geo" data-slug="114381589" href="/a/114381589/">Knocknagappul</a> <a class="geochild geo" data-slug="114381588" href="/a/114381588/">Ahaglaslin</a> <a class="geochild geo" data-slug="114381585" href="/a/114381585/">Little-Island</a> <a class="geochild geo" data-slug="114381595" href="/a/114381595/">Knocknageehy</a><hr/></div><div><a class="geo" data-slug="114381716" href="/a/114381716/">Ardfield</a> <a class="geo" data-slug="114381581" href="/a/114381581/">Rosscarbery</a> <a class="geo" data-slug="114381741" href="/a/114381741/">Kilkerranmore</a> <a class="geo" data-slug="114381655" href="/a/114381655/">Coolcraheen</a> <a class="geo" data-slug="114381573" href="/a/114381573/">Derry</a> <a class="geo" data-slug="114381761" href="/a/114381761/">Clonakilty Urban</a> <a class="geo" data-slug="114381780" href="/a/114381780/">Clonakilty Rural</a> <a class="geo" data-slug="114381678" href="/a/114381678/">Argideen</a> <a class="geo" data-slug="114381651" href="/a/114381651/">Castleventry</a> <a class="geo" data-slug="114381622" href="/a/114381622/">Cahermore</a><hr/></div><br/><div class="gall2" style="padding:0px;"><a class="geo geochild" data-authorname="John Kavanagh" data-authorurl="http://www.panoramio.com/user/668257" data-fancybox="images" data-slug="p-3320841" data-title="Rathbarry Church, Clonakilty, Cork" href="https://static.panoramio.com.storage.googleapis.com/photos/large/3320841.jpg" title="Rathbarry Church, Clonakilty, Cork"><figure class="tint"><img alt="Rathbarry Church, Clonakilty, Cork" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/3320841.jpg"/><figcaption class="tint-text">Rathbarry Church, ...</figcaption></figure></a> <a class="geo geochild" data-authorname="corkperson" data-authorurl="http://www.panoramio.com/user/1101814" data-fancybox="images" data-slug="p-17934346" data-title="Rathbarry Church, Ardfield Parish" href="https://static.panoramio.com.storage.googleapis.com/photos/large/17934346.jpg" title="Rathbarry Church, Ardfield Parish"><figure class="tint"><img alt="Rathbarry Church, Ardfield Parish" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/17934346.jpg"/><figcaption class="tint-text">Rathbarry Church, ...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18432245" data-title="Rathbarry, West Cork, Ireland" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18432245.jpg" title="Rathbarry, West Cork, Ireland"><figure class="tint"><img alt="Rathbarry, West Cork, Ireland" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18432245.jpg"/><figcaption class="tint-text">Rathbarry, West Co...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18432716" data-title="Another Picnic Area, Rathbarry" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18432716.jpg" title="Another Picnic Area, Rathbarry"><figure class="tint"><img alt="Another Picnic Area, Rathbarry" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18432716.jpg"/><figcaption class="tint-text">Another Picnic Are...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18432861" data-title="Rathbarry Woods" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18432861.jpg" title="Rathbarry Woods"><figure class="tint"><img alt="Rathbarry Woods" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18432861.jpg"/><figcaption class="tint-text">Rathbarry Woods</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18433000" data-title="Path Through Rathbarry Woods" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18433000.jpg" title="Path Through Rathbarry Woods"><figure class="tint"><img alt="Path Through Rathbarry Woods" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18433000.jpg"/><figcaption class="tint-text">Path Through Rathb...</figcaption></figure></a> <br/> <br/><!-- gall2_responsive_1 --><ins class="adsbygoogle" data-ad-client="ca-pub-9451501134190452" data-ad-format="auto" data-ad-slot="7315837103" style="display:block"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18434054" data-title="Picnic Area by the Woods, Rathbarry" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18434054.jpg" title="Picnic Area by the Woods, Rathbarry"><figure class="tint"><img alt="Picnic Area by the Woods, Rathbarry" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18434054.jpg"/><figcaption class="tint-text">Picnic Area by the...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18434535" data-title="The Well, Rathbarry" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18434535.jpg" title="The Well, Rathbarry"><figure class="tint"><img alt="The Well, Rathbarry" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18434535.jpg"/><figcaption class="tint-text">The Well, Rathbarry</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18434803" data-title="Rathbarry Well" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18434803.jpg" title="Rathbarry Well"><figure class="tint"><img alt="Rathbarry Well" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18434803.jpg"/><figcaption class="tint-text">Rathbarry Well</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18435103" data-title="The Well, Rathbarry" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18435103.jpg" title="The Well, Rathbarry"><figure class="tint"><img alt="The Well, Rathbarry" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18435103.jpg"/><figcaption class="tint-text">The Well, Rathbarry</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18436670" data-title="Over the Bridge to the Well, Rathbarry" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18436670.jpg" title="Over the Bridge to the Well, Rathbarry"><figure class="tint"><img alt="Over the Bridge to the Well, Rathbarry" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18436670.jpg"/><figcaption class="tint-text">Over the Bridge to...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18436791" data-title="Looking Up Towards Rathbarry Church" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18436791.jpg" title="Looking Up Towards Rathbarry Church"><figure class="tint"><img alt="Looking Up Towards Rathbarry Church" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18436791.jpg"/><figcaption class="tint-text">Looking Up Towards...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18436846" data-title="View From Behind the Church, Rathbarry" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18436846.jpg" title="View From Behind the Church, Rathbarry"><figure class="tint"><img alt="View From Behind the Church, Rathbarry" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18436846.jpg"/><figcaption class="tint-text">View From Behind t...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18436964" data-title="Rathbarry (Castlefreke) Post Office" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18436964.jpg" title="Rathbarry (Castlefreke) Post Office"><figure class="tint"><img alt="Rathbarry (Castlefreke) Post Office" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18436964.jpg"/><figcaption class="tint-text">Rathbarry (Castlef...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18437005" data-title="Entrance to Museum, Rathbarry" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18437005.jpg" title="Entrance to Museum, Rathbarry"><figure class="tint"><img alt="Entrance to Museum, Rathbarry" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18437005.jpg"/><figcaption class="tint-text">Entrance to Museum...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18437074" data-title="Rathbarry Post Office Museum" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18437074.jpg" title="Rathbarry Post Office Museum"><figure class="tint"><img alt="Rathbarry Post Office Museum" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18437074.jpg"/><figcaption class="tint-text">Rathbarry Post Off...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18437184" data-title="Rathbarry Village Signpost" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18437184.jpg" title="Rathbarry Village Signpost"><figure class="tint"><img alt="Rathbarry Village Signpost" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18437184.jpg"/><figcaption class="tint-text">Rathbarry Village ...</figcaption></figure></a> <a class="geo geochild" data-authorname="potsy82" data-authorurl="http://www.panoramio.com/user/1011049" data-fancybox="images" data-slug="p-5341163" data-title="Church Ruins Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/5341163.jpg" title="Church Ruins Castlefreke"><figure class="tint"><img alt="Church Ruins Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/5341163.jpg"/><figcaption class="tint-text">Church Ruins Castl...</figcaption></figure></a> <br/><br/><!-- gall2_responsive_2 --><ins class="adsbygoogle" data-ad-client="ca-pub-9451501134190452" data-ad-format="auto" data-ad-slot="3105129351" style="display:block"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/> <a class="geo geochild" data-authorname="Marina Frintrop" data-authorurl="http://www.panoramio.com/user/1551061" data-fancybox="images" data-slug="p-13634369" data-title="Irish Coast close to Rosscarbery, Ireland Co. Cork" href="https://static.panoramio.com.storage.googleapis.com/photos/large/13634369.jpg" title="Irish Coast close to Rosscarbery, Ireland Co. Cork"><figure class="tint"><img alt="Irish Coast close to Rosscarbery, Ireland Co. Cork" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/13634369.jpg"/><figcaption class="tint-text">Irish Coast close ...</figcaption></figure></a> <a class="geo geochild" data-authorname="Robert Watt" data-authorurl="http://www.panoramio.com/user/1663840" data-fancybox="images" data-slug="p-13771846" data-title="Castlefreke Church" href="https://static.panoramio.com.storage.googleapis.com/photos/large/13771846.jpg" title="Castlefreke Church"><figure class="tint"><img alt="Castlefreke Church" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/13771846.jpg"/><figcaption class="tint-text">Castlefreke Church</figcaption></figure></a> <a class="geo geochild" data-authorname="marykk" data-authorurl="http://www.panoramio.com/user/226791" data-fancybox="images" data-slug="p-9780562" data-title="Clonakilty Co Cork Ireland" href="https://static.panoramio.com.storage.googleapis.com/photos/large/9780562.jpg" title="Clonakilty Co Cork Ireland"><figure class="tint"><img alt="Clonakilty Co Cork Ireland" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/9780562.jpg"/><figcaption class="tint-text">Clonakilty Co Cork...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18430739" data-title="Inside the Sprigging School" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18430739.jpg" title="Inside the Sprigging School"><figure class="tint"><img alt="Inside the Sprigging School" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18430739.jpg"/><figcaption class="tint-text">Inside the Spriggi...</figcaption></figure></a> <a class="geo geochild" data-authorname="Vráblík Jiří" data-authorurl="http://www.panoramio.com/user/3240449" data-fancybox="images" data-slug="p-22671305" data-title="Galley head" href="https://static.panoramio.com.storage.googleapis.com/photos/large/22671305.jpg" title="Galley head"><figure class="tint"><img alt="Galley head" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/22671305.jpg"/><figcaption class="tint-text">Galley head</figcaption></figure></a> <a class="geo geochild" data-authorname="mdymet" data-authorurl="http://www.panoramio.com/user/3333584" data-fancybox="images" data-slug="p-23694821" data-title="Near Cloghna Head" href="https://static.panoramio.com.storage.googleapis.com/photos/large/23694821.jpg" title="Near Cloghna Head"><figure class="tint"><img alt="Near Cloghna Head" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/23694821.jpg"/><figcaption class="tint-text">Near Cloghna Head</figcaption></figure></a> <a class="geo geochild" data-authorname="N9nebar" data-authorurl="http://www.panoramio.com/user/828807" data-fancybox="images" data-slug="p-4222309" data-title="castlefreake area" href="https://static.panoramio.com.storage.googleapis.com/photos/large/4222309.jpg" title="castlefreake area"><figure class="tint"><img alt="castlefreake area" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/4222309.jpg"/><figcaption class="tint-text">castlefreake area</figcaption></figure></a> <a class="geo geochild" data-authorname="Jacky Quirke" data-authorurl="http://www.panoramio.com/user/4996011" data-fancybox="images" data-slug="p-48016611" data-title="High Cross @ Croghna Hill," href="https://static.panoramio.com.storage.googleapis.com/photos/large/48016611.jpg" title="High Cross @ Croghna Hill,"><figure class="tint"><img alt="High Cross @ Croghna Hill," data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/48016611.jpg"/><figcaption class="tint-text">High Cross @ Crogh...</figcaption></figure></a> <a class="geo geochild" data-authorname="Henk Zwols" data-authorurl="http://www.panoramio.com/user/5418759" data-fancybox="images" data-slug="p-74863788" data-title="Rosscarbery bay" href="https://static.panoramio.com.storage.googleapis.com/photos/large/74863788.jpg" title="Rosscarbery bay"><figure class="tint"><img alt="Rosscarbery bay" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/74863788.jpg"/><figcaption class="tint-text">Rosscarbery bay</figcaption></figure></a> <a class="geo geochild" data-authorname="mjungmann" data-authorurl="http://www.panoramio.com/user/2022990" data-fancybox="images" data-slug="p-12737763" data-title="Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/12737763.jpg" title="Castlefreke"><figure class="tint"><img alt="Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/12737763.jpg"/><figcaption class="tint-text">Castlefreke</figcaption></figure></a> <a class="geo geochild" data-authorname="CCFC" data-authorurl="http://www.panoramio.com/user/1781338" data-fancybox="images" data-slug="p-19296483" data-title="Castlefreke Castle" href="https://static.panoramio.com.storage.googleapis.com/photos/large/19296483.jpg" title="Castlefreke Castle"><figure class="tint"><img alt="Castlefreke Castle" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/19296483.jpg"/><figcaption class="tint-text">Castlefreke Castle</figcaption></figure></a> <a class="geo geochild" data-authorname="mjungmann" data-authorurl="http://www.panoramio.com/user/2022990" data-fancybox="images" data-slug="p-12737706" data-title="Long Strand, Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/12737706.jpg" title="Long Strand, Castlefreke"><figure class="tint"><img alt="Long Strand, Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/12737706.jpg"/><figcaption class="tint-text">Long Strand, Castl...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18426440" data-title="Milltown, Co. Cork, Ireland" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18426440.jpg" title="Milltown, Co. Cork, Ireland"><figure class="tint"><img alt="Milltown, Co. Cork, Ireland" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18426440.jpg"/><figcaption class="tint-text">Milltown, Co. Cork...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18427997" data-title="Plaque About the Sprigging School" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18427997.jpg" title="Plaque About the Sprigging School"><figure class="tint"><img alt="Plaque About the Sprigging School" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18427997.jpg"/><figcaption class="tint-text">Plaque About the S...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18430471" data-title="Inside the Sprigging School Museum" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18430471.jpg" title="Inside the Sprigging School Museum"><figure class="tint"><img alt="Inside the Sprigging School Museum" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18430471.jpg"/><figcaption class="tint-text">Inside the Spriggi...</figcaption></figure></a> <a class="geo geochild" data-authorname="graypeter" data-authorurl="http://www.panoramio.com/user/2593278" data-fancybox="images" data-slug="p-17103025" data-title="Owanahincha Outlook" href="https://static.panoramio.com.storage.googleapis.com/photos/large/17103025.jpg" title="Owanahincha Outlook"><figure class="tint"><img alt="Owanahincha Outlook" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/17103025.jpg"/><figcaption class="tint-text">Owanahincha Outlook</figcaption></figure></a> <a class="geo geochild" data-authorname="CCFC" data-authorurl="http://www.panoramio.com/user/1781338" data-fancybox="images" data-slug="p-19296582" data-title="Castlefreke Church Ruins" href="https://static.panoramio.com.storage.googleapis.com/photos/large/19296582.jpg" title="Castlefreke Church Ruins"><figure class="tint"><img alt="Castlefreke Church Ruins" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/19296582.jpg"/><figcaption class="tint-text">Castlefreke Church...</figcaption></figure></a> <a class="geo geochild" data-authorname="mjungmann" data-authorurl="http://www.panoramio.com/user/2022990" data-fancybox="images" data-slug="p-12737745" data-title="Long Strand, Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/12737745.jpg" title="Long Strand, Castlefreke"><figure class="tint"><img alt="Long Strand, Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/12737745.jpg"/><figcaption class="tint-text">Long Strand, Castl...</figcaption></figure></a> <br/><br/><!-- gall2_responsive_3 --><ins class="adsbygoogle" data-ad-client="ca-pub-9451501134190452" data-ad-format="auto" data-ad-slot="8812396386" style="display:block"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br/> <a class="geo geochild" data-authorname="2c" data-authorurl="http://www.panoramio.com/user/1415568" data-fancybox="images" data-slug="p-9259707" data-title="Galley head Light, House &amp; Sky, West Cork, Ireland" href="https://static.panoramio.com.storage.googleapis.com/photos/large/9259707.jpg" title="Galley head Light, House &amp; Sky, West Cork, Ireland"><figure class="tint"><img alt="Galley head Light, House &amp; Sky, West Cork, Ireland" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/9259707.jpg"/><figcaption class="tint-text">Galley head Light,...</figcaption></figure></a> <a class="geo geochild" data-authorname="2c" data-authorurl="http://www.panoramio.com/user/1415568" data-fancybox="images" data-slug="p-8431468" data-title="Galleyhead lighthouse, West Cork, Ireland" href="https://static.panoramio.com.storage.googleapis.com/photos/large/8431468.jpg" title="Galleyhead lighthouse, West Cork, Ireland"><figure class="tint"><img alt="Galleyhead lighthouse, West Cork, Ireland" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/8431468.jpg"/><figcaption class="tint-text">Galleyhead lightho...</figcaption></figure></a> <a class="geo geochild" data-authorname="lsnick" data-authorurl="http://www.panoramio.com/user/1332506" data-fancybox="images" data-slug="p-7426983" data-title="Red Strand Caravan Park" href="https://static.panoramio.com.storage.googleapis.com/photos/large/7426983.jpg" title="Red Strand Caravan Park"><figure class="tint"><img alt="Red Strand Caravan Park" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/7426983.jpg"/><figcaption class="tint-text">Red Strand Caravan...</figcaption></figure></a> <a class="geo geochild" data-authorname="Noor47" data-authorurl="http://www.panoramio.com/user/1030527" data-fancybox="images" data-slug="p-40398302" data-title="Galley head lighthouse" href="https://static.panoramio.com.storage.googleapis.com/photos/large/40398302.jpg" title="Galley head lighthouse"><figure class="tint"><img alt="Galley head lighthouse" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/40398302.jpg"/><figcaption class="tint-text">Galley head lighth...</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18437128" data-title="The garden at the Post Office" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18437128.jpg" title="The garden at the Post Office"><figure class="tint"><img alt="The garden at the Post Office" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18437128.jpg"/><figcaption class="tint-text">The garden at the ...</figcaption></figure></a> <a class="geo geochild" data-authorname="Jacky Quirke" data-authorurl="http://www.panoramio.com/user/4996011" data-fancybox="images" data-slug="p-64375941" data-title="Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/64375941.jpg" title="Castlefreke"><figure class="tint"><img alt="Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/64375941.jpg"/><figcaption class="tint-text">Castlefreke</figcaption></figure></a> <a class="geo geochild" data-authorname="Jarlath Heneghan" data-authorurl="http://www.panoramio.com/user/754919" data-fancybox="images" data-slug="p-11434800" data-title="Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/11434800.jpg" title="Castlefreke"><figure class="tint"><img alt="Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/11434800.jpg"/><figcaption class="tint-text">Castlefreke</figcaption></figure></a> <a class="geo geochild" data-authorname="Robert Watt" data-authorurl="http://www.panoramio.com/user/1663840" data-fancybox="images" data-slug="p-13769938" data-title="Galley Head" href="https://static.panoramio.com.storage.googleapis.com/photos/large/13769938.jpg" title="Galley Head"><figure class="tint"><img alt="Galley Head" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/13769938.jpg"/><figcaption class="tint-text">Galley Head</figcaption></figure></a> <a class="geo geochild" data-authorname="Tribal Networks" data-authorurl="http://www.panoramio.com/user/2178674" data-fancybox="images" data-slug="p-18433846" data-title="Looking Down from Woods to the Road" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18433846.jpg" title="Looking Down from Woods to the Road"><figure class="tint"><img alt="Looking Down from Woods to the Road" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18433846.jpg"/><figcaption class="tint-text">Looking Down from ...</figcaption></figure></a> <a class="geo geochild" data-authorname="mjungmann" data-authorurl="http://www.panoramio.com/user/2022990" data-fancybox="images" data-slug="p-12737725" data-title="Long Strand, Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/12737725.jpg" title="Long Strand, Castlefreke"><figure class="tint"><img alt="Long Strand, Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/12737725.jpg"/><figcaption class="tint-text">Long Strand, Castl...</figcaption></figure></a> <a class="geo geochild" data-authorname="CCFC" data-authorurl="http://www.panoramio.com/user/1781338" data-fancybox="images" data-slug="p-18973005" data-title="Long Strand" href="https://static.panoramio.com.storage.googleapis.com/photos/large/18973005.jpg" title="Long Strand"><figure class="tint"><img alt="Long Strand" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/18973005.jpg"/><figcaption class="tint-text">Long Strand</figcaption></figure></a> <a class="geo geochild" data-authorname="mjungmann" data-authorurl="http://www.panoramio.com/user/2022990" data-fancybox="images" data-slug="p-12737698" data-title="Long Strand, Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/12737698.jpg" title="Long Strand, Castlefreke"><figure class="tint"><img alt="Long Strand, Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/12737698.jpg"/><figcaption class="tint-text">Long Strand, Castl...</figcaption></figure></a> <a class="geo geochild" data-authorname="mjungmann" data-authorurl="http://www.panoramio.com/user/2022990" data-fancybox="images" data-slug="p-12737738" data-title="Long Strand, Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/12737738.jpg" title="Long Strand, Castlefreke"><figure class="tint"><img alt="Long Strand, Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/12737738.jpg"/><figcaption class="tint-text">Long Strand, Castl...</figcaption></figure></a> <a class="geo geochild" data-authorname="mjungmann" data-authorurl="http://www.panoramio.com/user/2022990" data-fancybox="images" data-slug="p-12737754" data-title="Long Strand, Castlefreke" href="https://static.panoramio.com.storage.googleapis.com/photos/large/12737754.jpg" title="Long Strand, Castlefreke"><figure class="tint"><img alt="Long Strand, Castlefreke" data-src="https://static.panoramio.com.storage.googleapis.com/photos/medium/12737754.jpg"/><figcaption class="tint-text">Long Strand, Castl...</figcaption></figure></a></div></div><div class="w3-panel" style="text-align: center;"><!-- google_ad_large_rectangel --><ins class="adsbygoogle adslot_desk" data-ad-client="ca-pub-9451501134190452" data-ad-slot="8728044630" style="display:inline-block;width:336px;height:280px"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><div class="cardholder rmv" style="padding-bottom: 40px;"><a class="impressum" href="/impressum/" id="impressumid" style="font-size: small;color:black;background: rgba(255, 233, 204, 0.66);">Impressum</a></div><script>
+
+$().fancybox({
+     caption : function( instance, item ) {
+        var title = $(this).data('title') || '';
+    var slug_pk = String($(this).data('slug')) || '';
+
+
+        return '<div style="padding:3px;"><a href="' + $(this).data('authorurl') + '"  onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">' + $(this).data('authorname') + '</a><br>' + title + '<br><a class="ahover" href="/pic/' + slug_pk + '/">detail</a></div>';
+
+
+
+    },
+  selector : '[data-fancybox="images2"]',
+  loop     : true
+});
+
+
+
+
+$( '[data-fancybox="images"]' ).fancybox({
+    caption : function( instance, item ) {
+        var title = $(this).data('title') || '';
+    var slug_pk = String($(this).data('slug')) || '';
+
+
+        return '<div style="padding:3px;"><a href="' + $(this).data('authorurl') + '"  onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">' + $(this).data('authorname') + '</a><br>' + title + '<br><a class="ahover" href="/pic/' + slug_pk + '/">detail</a></div>';
+
+
+
+    },
+     loop     : true
+});
+
+
+</script><script type="text/javascript">
+backpic = [];
+geojson3 = {};
+geojson4 = {};
+
+
+
+lang = 'None';
+pk = '114381691';
+ list1 = [{"type": "MultiPolygon", "coordinates": [[[[-9.001405260295597, 51.57482399180242], [-9.000425288152151, 51.576875180238375], [-8.99676483303242, 51.57836071412842], [-8.992945016781288, 51.581340176943606], [-8.992509244036961, 51.582709013091424], [-8.980387916582222, 51.58781641412969], [-8.977511690705528, 51.585549877975666], [-8.97499038919759, 51.58496988598011], [-8.972631503093021, 51.58085977389386], [-8.968782940752796, 51.58182068655672], [-8.96801047943998, 51.58140989804251], [-8.96746583088322, 51.58204296519095], [-8.968462960848592, 51.58359296839318], [-8.96699753912561, 51.58458988143584], [-8.965937257595762, 51.58426898499417], [-8.962651310117982, 51.5819413713745], [-8.95951358466208, 51.5773413896572], [-8.949068154201395, 51.583027576130846], [-8.9451229331366, 51.58199719218088], [-8.942999585299527, 51.579761571087516], [-8.93751231621801, 51.57772441359905], [-8.932316280951605, 51.579401005552306], [-8.930969975835296, 51.57767461676133], [-8.931240907724986, 51.57501258374359], [-8.930532855618043, 51.57372396821175], [-8.931809631131362, 51.5708432798726], [-8.929535007000444, 51.56858421681546], [-8.927732627214386, 51.5685076080477], [-8.926221930401082, 51.56719379226063], [-8.926844642556034, 51.56676209925074], [-8.926906536479109, 51.563998574990805], [-8.92463200217972, 51.561143964941465], [-8.925812388463052, 51.555034406862035], [-8.924235216318724, 51.548810070661915], [-8.925224530941124, 51.54749166358509], [-8.927238823302707, 51.547984485616404], [-8.930893259710032, 51.54720016873987], [-8.932790950747735, 51.547551492978315], [-8.93286928384051, 51.54687431573729], [-8.933998825478762, 51.5463956712646], [-8.934374411099052, 51.546869567304945], [-8.93473265923436, 51.546201988649344], [-8.935647593351234, 51.546306511443746], [-8.935182086371004, 51.54672057800553], [-8.936389332281333, 51.54632321495732], [-8.936389332281333, 51.54701928234496], [-8.937383048648627, 51.54616098391723], [-8.940094074344568, 51.54602310942434], [-8.943416044265243, 51.54267997201412], [-8.943220121701778, 51.54082256731806], [-8.942501110148369, 51.54103649816498], [-8.942887206057483, 51.53967769334886], [-8.940984125128077, 51.539057669300014], [-8.942402205635586, 51.53646411497567], [-8.944879938852246, 51.534839974189936], [-8.94665420136991, 51.53454806302073], [-8.946757597459111, 51.53592758385658], [-8.950019919244921, 51.534839974189936], [-8.950612986995496, 51.53382196498319], [-8.94908495269721, 51.53417579533367], [-8.950569059378102, 51.533115190123894], [-8.94905207435781, 51.53360850314472], [-8.951636257935636, 51.53106018323637], [-8.951453810101432, 51.52960518182207], [-8.95333137887677, 51.529411595397264], [-8.955800128940586, 51.53123370061953], [-8.957490937968355, 51.530883312179654], [-8.952123324482686, 51.53445128042048], [-8.9530899117284, 51.536640014449176], [-8.954894986460308, 51.5376216975976], [-8.953429924063439, 51.53892960704899], [-8.955046083091098, 51.538333766426895], [-8.954109948733516, 51.540609976383834], [-8.956323577256644, 51.541286073570205], [-8.95404913278878, 51.543526380351544], [-8.955283507820688, 51.54432338650978], [-8.956989947534405, 51.54356001288566], [-8.955990841275407, 51.54472551567958], [-8.957251087787498, 51.54436936505965], [-8.955204815401801, 51.54625617740757], [-8.95678989272063, 51.54765997894167], [-8.955339922020533, 51.55021999383664], [-8.956176882370748, 51.551491680246656], [-8.965827483468043, 51.556661680760165], [-8.973031882215153, 51.5592030941155], [-8.976717220668252, 51.56013358092404], [-8.979179952019667, 51.55854999393039], [-8.985349940717112, 51.56021997711873], [-8.986872046134526, 51.56250620540114], [-8.98996314902718, 51.56429638408962], [-8.995906941936086, 51.565713589149205], [-8.998261875453407, 51.56544678115383], [-8.999894293987708, 51.567090601754835], [-8.998663512216934, 51.567756980471714], [-9.001286592846563, 51.57051999712649], [-9.000644027923833, 51.57327307534883], [-9.001405260295597, 51.57482399180242]]]]}];
+
+
+
+ arr = {};
+ari = [];
+fb_here = "https://external-vie1-1.xx.fbcdn.net/map_tile.php?v=21&x={x}&y={y}&z={z}&language=en_US&theme=undefined";
+
+
+ osm2 = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+ minimap = new L.Map('minimap', {center: new L.LatLng(0, 0), maxZoom: 18, zoomControl: true});
+	osmLayer = new L.TileLayer(osm2, {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Data © <a href="https://mapio.net">Mapio.net</a>  '
+
+        });
+
+
+minimap.addLayer(osmLayer);
+
+
+
+
+
+
+
+
+   myStyle2 = {
+    "color": "purple",
+    "weight": 2,
+    "opacity": 1,
+         'fillColor': "purple",
+  'fillOpacity': 0.1
+
+};
+
+     myStyle4 = {
+    "color": "yellow",
+    "weight": 2,
+    "opacity": 1,
+         'fillColor': "yellow",
+  'fillOpacity': 0.1
+
+};
+
+  $(function () {
+
+
+    geojson_current = L.geoJson(list1, {
+    style: myStyle2
+
+}).addTo(minimap);
+
+minimap.fitBounds(geojson_current.getBounds());
+
+
+
+
+  $(".geo").mouseover(function(){
+var sug = $(this).attr("data-slug");
+
+if (sug in arr){
+
+      var geom = arr[sug];
+
+geojson4 = L.geoJson(geom, {
+    style: myStyle2,
+     pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, {
+					radius: 10,
+					fillColor: "purple",
+					color: "purple",
+					weight: 1,
+					opacity: 1,
+					fillOpacity: 0.5
+				});
+    }
+}).addTo(minimap);
+
+    if ($(this).hasClass( "geochild" )){
+
+    }
+
+else{
+
+        minimap.fitBounds(geojson4.getBounds());
+
+    }
+
+
+
+}else {
+          $.getJSON("/api/get_geoms_byid?id=" + String(sug),function(result){
+
+ arr[result.id] = result.geo;
+
+
+
+
+                     } );
+
+}
+
+
+
+  });
+  $(".geo").mouseout(function(){
+
+
+minimap.fitBounds(geojson_current.getBounds());
+minimap.removeLayer(geojson4);
+
+  });
+
+
+   clusters = new L.MarkerClusterGroup({
+        polygonOptions: {
+            color: "purple",
+            fillColor: "purple",
+            fillOpacity: .2,
+            weight: 2,
+            opacity: 1
+        }
+    });
+    minimap.addLayer(clusters);
+
+
+function onMapClick(e) {
+
+    var marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(minimap);
+    var url = '/geo/'+ String(e.latlng.lat) + '/'+ String(e.latlng.lng) + '/'+ lang +'/';
+    marker.bindPopup("<b><a href='"+url+"' >detail</a></b>").openPopup();
+}
+
+minimap.on('click', onMapClick);
+
+
+
+
+
+
+
+
+
+arr["p-3320841"] = {"type": "Point", "coordinates": [-8.963556, 51.572589]};
+    ari.push(["p-3320841", "Rathbarry Church, Clonakilty, Cork", {"type": "Point", "coordinates": [-8.963556, 51.572589]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/3320841.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/3320841.jpg", "John Kavanagh", "http://www.panoramio.com/user/668257"]);
+    
+arr["p-17934346"] = {"type": "Point", "coordinates": [-8.962097, 51.575696]};
+    ari.push(["p-17934346", "Rathbarry Church, Ardfield Parish", {"type": "Point", "coordinates": [-8.962097, 51.575696]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/17934346.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/17934346.jpg", "corkperson", "http://www.panoramio.com/user/1101814"]);
+    
+arr["p-18432245"] = {"type": "Point", "coordinates": [-8.96222, 51.5729]};
+    ari.push(["p-18432245", "Rathbarry, West Cork, Ireland", {"type": "Point", "coordinates": [-8.96222, 51.5729]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18432245.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18432245.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18432716"] = {"type": "Point", "coordinates": [-8.96085, 51.5733]};
+    ari.push(["p-18432716", "Another Picnic Area, Rathbarry", {"type": "Point", "coordinates": [-8.96085, 51.5733]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18432716.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18432716.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18432861"] = {"type": "Point", "coordinates": [-8.96085, 51.5733]};
+    ari.push(["p-18432861", "Rathbarry Woods", {"type": "Point", "coordinates": [-8.96085, 51.5733]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18432861.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18432861.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18433000"] = {"type": "Point", "coordinates": [-8.96085, 51.5733]};
+    ari.push(["p-18433000", "Path Through Rathbarry Woods", {"type": "Point", "coordinates": [-8.96085, 51.5733]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18433000.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18433000.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18434054"] = {"type": "Point", "coordinates": [-8.96062, 51.5745]};
+    ari.push(["p-18434054", "Picnic Area by the Woods, Rathbarry", {"type": "Point", "coordinates": [-8.96062, 51.5745]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18434054.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18434054.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18434535"] = {"type": "Point", "coordinates": [-8.96059, 51.575]};
+    ari.push(["p-18434535", "The Well, Rathbarry", {"type": "Point", "coordinates": [-8.96059, 51.575]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18434535.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18434535.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18434803"] = {"type": "Point", "coordinates": [-8.96059, 51.575]};
+    ari.push(["p-18434803", "Rathbarry Well", {"type": "Point", "coordinates": [-8.96059, 51.575]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18434803.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18434803.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18435103"] = {"type": "Point", "coordinates": [-8.96059, 51.575]};
+    ari.push(["p-18435103", "The Well, Rathbarry", {"type": "Point", "coordinates": [-8.96059, 51.575]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18435103.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18435103.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18436670"] = {"type": "Point", "coordinates": [-8.9606, 51.575]};
+    ari.push(["p-18436670", "Over the Bridge to the Well, Rathbarry", {"type": "Point", "coordinates": [-8.9606, 51.575]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18436670.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18436670.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18436791"] = {"type": "Point", "coordinates": [-8.9608, 51.5749]};
+    ari.push(["p-18436791", "Looking Up Towards Rathbarry Church", {"type": "Point", "coordinates": [-8.9608, 51.5749]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18436791.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18436791.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18436846"] = {"type": "Point", "coordinates": [-8.96147, 51.575962]};
+    ari.push(["p-18436846", "View From Behind the Church, Rathbarry", {"type": "Point", "coordinates": [-8.96147, 51.575962]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18436846.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18436846.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18436964"] = {"type": "Point", "coordinates": [-8.96059, 51.5718]};
+    ari.push(["p-18436964", "Rathbarry (Castlefreke) Post Office", {"type": "Point", "coordinates": [-8.96059, 51.5718]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18436964.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18436964.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18437005"] = {"type": "Point", "coordinates": [-8.96059, 51.5718]};
+    ari.push(["p-18437005", "Entrance to Museum, Rathbarry", {"type": "Point", "coordinates": [-8.96059, 51.5718]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18437005.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18437005.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18437074"] = {"type": "Point", "coordinates": [-8.96059, 51.5718]};
+    ari.push(["p-18437074", "Rathbarry Post Office Museum", {"type": "Point", "coordinates": [-8.96059, 51.5718]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18437074.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18437074.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18437184"] = {"type": "Point", "coordinates": [-8.963224, 51.573102]};
+    ari.push(["p-18437184", "Rathbarry Village Signpost", {"type": "Point", "coordinates": [-8.963224, 51.573102]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18437184.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18437184.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-5341163"] = {"type": "Point", "coordinates": [-8.962097, 51.562132]};
+    ari.push(["p-5341163", "Church Ruins Castlefreke", {"type": "Point", "coordinates": [-8.962097, 51.562132]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/5341163.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/5341163.jpg", "potsy82", "http://www.panoramio.com/user/1011049"]);
+    
+arr["p-13634369"] = {"type": "Point", "coordinates": [-8.993683, 51.565493]};
+    ari.push(["p-13634369", "Irish Coast close to Rosscarbery, Ireland Co. Cork", {"type": "Point", "coordinates": [-8.993683, 51.565493]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/13634369.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/13634369.jpg", "Marina Frintrop", "http://www.panoramio.com/user/1551061"]);
+    
+arr["p-13771846"] = {"type": "Point", "coordinates": [-8.973942, 51.561385]};
+    ari.push(["p-13771846", "Castlefreke Church", {"type": "Point", "coordinates": [-8.973942, 51.561385]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/13771846.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/13771846.jpg", "Robert Watt", "http://www.panoramio.com/user/1663840"]);
+    
+arr["p-9780562"] = {"type": "Point", "coordinates": [-8.954887, 51.551245]};
+    ari.push(["p-9780562", "Clonakilty Co Cork Ireland", {"type": "Point", "coordinates": [-8.954887, 51.551245]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/9780562.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/9780562.jpg", "marykk", "http://www.panoramio.com/user/226791"]);
+    
+arr["p-18430739"] = {"type": "Point", "coordinates": [-8.95967, 51.5745]};
+    ari.push(["p-18430739", "Inside the Sprigging School", {"type": "Point", "coordinates": [-8.95967, 51.5745]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18430739.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18430739.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-22671305"] = {"type": "Point", "coordinates": [-8.984413, 51.563092]};
+    ari.push(["p-22671305", "Galley head", {"type": "Point", "coordinates": [-8.984413, 51.563092]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/22671305.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/22671305.jpg", "Vr\u00e1bl\u00edk Ji\u0159\u00ed", "http://www.panoramio.com/user/3240449"]);
+    
+arr["p-23694821"] = {"type": "Point", "coordinates": [-8.97567777778, 51.5601138889]};
+    ari.push(["p-23694821", "Near Cloghna Head", {"type": "Point", "coordinates": [-8.97567777778, 51.5601138889]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/23694821.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/23694821.jpg", "mdymet", "http://www.panoramio.com/user/3333584"]);
+    
+arr["p-4222309"] = {"type": "Point", "coordinates": [-8.985186, 51.561331]};
+    ari.push(["p-4222309", "castlefreake area", {"type": "Point", "coordinates": [-8.985186, 51.561331]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/4222309.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/4222309.jpg", "N9nebar", "http://www.panoramio.com/user/828807"]);
+    
+arr["p-48016611"] = {"type": "Point", "coordinates": [-8.960037, 51.560157]};
+    ari.push(["p-48016611", "High Cross @ Croghna Hill,", {"type": "Point", "coordinates": [-8.960037, 51.560157]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/48016611.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/48016611.jpg", "Jacky Quirke", "http://www.panoramio.com/user/4996011"]);
+    
+arr["p-74863788"] = {"type": "Point", "coordinates": [-8.985335, 51.561425]};
+    ari.push(["p-74863788", "Rosscarbery bay", {"type": "Point", "coordinates": [-8.985335, 51.561425]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/74863788.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/74863788.jpg", "Henk Zwols", "http://www.panoramio.com/user/5418759"]);
+    
+arr["p-12737763"] = {"type": "Point", "coordinates": [-8.972912, 51.559997]};
+    ari.push(["p-12737763", "Castlefreke", {"type": "Point", "coordinates": [-8.972912, 51.559997]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/12737763.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/12737763.jpg", "mjungmann", "http://www.panoramio.com/user/2022990"]);
+    
+arr["p-19296483"] = {"type": "Point", "coordinates": [-8.971195, 51.565013]};
+    ari.push(["p-19296483", "Castlefreke Castle", {"type": "Point", "coordinates": [-8.971195, 51.565013]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/19296483.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/19296483.jpg", "CCFC", "http://www.panoramio.com/user/1781338"]);
+    
+arr["p-12737706"] = {"type": "Point", "coordinates": [-8.97068, 51.558503]};
+    ari.push(["p-12737706", "Long Strand, Castlefreke", {"type": "Point", "coordinates": [-8.97068, 51.558503]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/12737706.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/12737706.jpg", "mjungmann", "http://www.panoramio.com/user/2022990"]);
+    
+arr["p-18426440"] = {"type": "Point", "coordinates": [-8.95966, 51.5744]};
+    ari.push(["p-18426440", "Milltown, Co. Cork, Ireland", {"type": "Point", "coordinates": [-8.95966, 51.5744]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18426440.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18426440.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18427997"] = {"type": "Point", "coordinates": [-8.95967, 51.5745]};
+    ari.push(["p-18427997", "Plaque About the Sprigging School", {"type": "Point", "coordinates": [-8.95967, 51.5745]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18427997.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18427997.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-18430471"] = {"type": "Point", "coordinates": [-8.95967, 51.5745]};
+    ari.push(["p-18430471", "Inside the Sprigging School Museum", {"type": "Point", "coordinates": [-8.95967, 51.5745]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18430471.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18430471.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-17103025"] = {"type": "Point", "coordinates": [-8.989048, 51.568641]};
+    ari.push(["p-17103025", "Owanahincha Outlook", {"type": "Point", "coordinates": [-8.989048, 51.568641]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/17103025.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/17103025.jpg", "graypeter", "http://www.panoramio.com/user/2593278"]);
+    
+arr["p-19296582"] = {"type": "Point", "coordinates": [-8.962097, 51.55893]};
+    ari.push(["p-19296582", "Castlefreke Church Ruins", {"type": "Point", "coordinates": [-8.962097, 51.55893]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/19296582.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/19296582.jpg", "CCFC", "http://www.panoramio.com/user/1781338"]);
+    
+arr["p-12737745"] = {"type": "Point", "coordinates": [-8.97068, 51.558503]};
+    ari.push(["p-12737745", "Long Strand, Castlefreke", {"type": "Point", "coordinates": [-8.97068, 51.558503]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/12737745.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/12737745.jpg", "mjungmann", "http://www.panoramio.com/user/2022990"]);
+    
+arr["p-9259707"] = {"type": "Point", "coordinates": [-8.945618, 51.535018]};
+    ari.push(["p-9259707", "Galley head Light, House & Sky, West Cork, Ireland", {"type": "Point", "coordinates": [-8.945618, 51.535018]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/9259707.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/9259707.jpg", "2c", "http://www.panoramio.com/user/1415568"]);
+    
+arr["p-8431468"] = {"type": "Point", "coordinates": [-8.952827, 51.529892]};
+    ari.push(["p-8431468", "Galleyhead lighthouse, West Cork, Ireland", {"type": "Point", "coordinates": [-8.952827, 51.529892]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/8431468.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/8431468.jpg", "2c", "http://www.panoramio.com/user/1415568"]);
+    
+arr["p-7426983"] = {"type": "Point", "coordinates": [-8.926392, 51.548257]};
+    ari.push(["p-7426983", "Red Strand Caravan Park", {"type": "Point", "coordinates": [-8.926392, 51.548257]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/7426983.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/7426983.jpg", "lsnick", "http://www.panoramio.com/user/1332506"]);
+    
+arr["p-40398302"] = {"type": "Point", "coordinates": [-8.955402, 51.532562]};
+    ari.push(["p-40398302", "Galley head lighthouse", {"type": "Point", "coordinates": [-8.955402, 51.532562]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/40398302.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/40398302.jpg", "Noor47", "http://www.panoramio.com/user/1030527"]);
+    
+arr["p-18437128"] = {"type": "Point", "coordinates": [-8.96059, 51.5718]};
+    ari.push(["p-18437128", "The garden at the Post Office", {"type": "Point", "coordinates": [-8.96059, 51.5718]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18437128.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18437128.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-64375941"] = {"type": "Point", "coordinates": [-8.963943, 51.575843]};
+    ari.push(["p-64375941", "Castlefreke", {"type": "Point", "coordinates": [-8.963943, 51.575843]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/64375941.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/64375941.jpg", "Jacky Quirke", "http://www.panoramio.com/user/4996011"]);
+    
+arr["p-11434800"] = {"type": "Point", "coordinates": [-8.972225, 51.56576]};
+    ari.push(["p-11434800", "Castlefreke", {"type": "Point", "coordinates": [-8.972225, 51.56576]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/11434800.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/11434800.jpg", "Jarlath Heneghan", "http://www.panoramio.com/user/754919"]);
+    
+arr["p-13769938"] = {"type": "Point", "coordinates": [-8.973598, 51.559784]};
+    ari.push(["p-13769938", "Galley Head", {"type": "Point", "coordinates": [-8.973598, 51.559784]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/13769938.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/13769938.jpg", "Robert Watt", "http://www.panoramio.com/user/1663840"]);
+    
+arr["p-18433846"] = {"type": "Point", "coordinates": [-8.96062, 51.5745]};
+    ari.push(["p-18433846", "Looking Down from Woods to the Road", {"type": "Point", "coordinates": [-8.96062, 51.5745]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18433846.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18433846.jpg", "Tribal Networks", "http://www.panoramio.com/user/2178674"]);
+    
+arr["p-12737725"] = {"type": "Point", "coordinates": [-8.97068, 51.558503]};
+    ari.push(["p-12737725", "Long Strand, Castlefreke", {"type": "Point", "coordinates": [-8.97068, 51.558503]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/12737725.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/12737725.jpg", "mjungmann", "http://www.panoramio.com/user/2022990"]);
+    
+arr["p-18973005"] = {"type": "Point", "coordinates": [-8.966904, 51.558076]};
+    ari.push(["p-18973005", "Long Strand", {"type": "Point", "coordinates": [-8.966904, 51.558076]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/18973005.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/18973005.jpg", "CCFC", "http://www.panoramio.com/user/1781338"]);
+    
+arr["p-12737698"] = {"type": "Point", "coordinates": [-8.97068, 51.558503]};
+    ari.push(["p-12737698", "Long Strand, Castlefreke", {"type": "Point", "coordinates": [-8.97068, 51.558503]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/12737698.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/12737698.jpg", "mjungmann", "http://www.panoramio.com/user/2022990"]);
+    
+arr["p-12737738"] = {"type": "Point", "coordinates": [-8.97068, 51.558503]};
+    ari.push(["p-12737738", "Long Strand, Castlefreke", {"type": "Point", "coordinates": [-8.97068, 51.558503]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/12737738.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/12737738.jpg", "mjungmann", "http://www.panoramio.com/user/2022990"]);
+    
+arr["p-12737754"] = {"type": "Point", "coordinates": [-8.97068, 51.558503]};
+    ari.push(["p-12737754", "Long Strand, Castlefreke", {"type": "Point", "coordinates": [-8.97068, 51.558503]}, "https://static.panoramio.com.storage.googleapis.com/photos/large/12737754.jpg", "https://static.panoramio.com.storage.googleapis.com/photos/medium/12737754.jpg", "mjungmann", "http://www.panoramio.com/user/2022990"]);
+    
+ 
+
+
+
+
+
+     $.each(ari, function( index, value ) {
+                      var n = value[1],
+                        c = String(value[0]),
+                              a = value[5],
+
+                               u = value[6],
+                                  z = value[7],
+                                b = value[3],
+                                s = value[4]
+                              ;
+          var geojso = value[2].coordinates;
+          var g = new L.Marker(new L.LatLng(geojso[1], geojso[0]), {
+                        title: n,
+                        icon: L.AwesomeMarkers.icon({
+                            icon: "i",
+                            prefix: "fa",
+                            markerColor: "green"
+                        })
+                    });
+    var htm = '<a class="geo geochild" data-authorname="' + a + '" data-authorurl="' + u + '" data-slug="' + c + '" href="' + b + '" data-fancybox="images2" data-title="' + n + '"><img height="90" src="' + s + '" style="object-fit: cover;padding:0px;" width="90"/></a>';
+
+         g.bindPopup(htm);
+         clusters.addLayer(g);
+});
+
+
+      } );
+	</script><script src="https://storage.googleapis.com/rovar/mujstorage2/2busters/mrkclstr.js"></script><script src="https://storage.googleapis.com/rovar/mujstorage2/2busters/Leaflet.awesomem/dist/leaflet.awesome-markers.min.js"></script><script src="https://storage.googleapis.com/rovar/mujstorage2/2busters/srobbin/jquery.backstretch.min.js"></script><script>
+
+   backpic = [];
+     small_backpic = [];
+
+backpic.push('https://static.panoramio.com.storage.googleapis.com/photos/large/3320841.jpg');small_backpic.push('https://static.panoramio.com.storage.googleapis.com/photos/medium/3320841.jpg');backpic.push('https://static.panoramio.com.storage.googleapis.com/photos/large/17934346.jpg');small_backpic.push('https://static.panoramio.com.storage.googleapis.com/photos/medium/17934346.jpg');backpic.push('https://static.panoramio.com.storage.googleapis.com/photos/large/18432245.jpg');small_backpic.push('https://static.panoramio.com.storage.googleapis.com/photos/medium/18432245.jpg');
+
+function runifwide(w) {
+
+    if (w < 800){
+
+        var leni = small_backpic.length;
+          if (leni > 0) {
+          $('#backpicx').backstretch(small_backpic, {
+        fade: 1000,
+        duration: 6000
+    });
+          }
+
+
+    }else{
+  var leni = backpic.length;
+          if (leni > 0) {
+          $('#backpicx').backstretch(backpic, {
+        fade: 1000,
+        duration: 6000
+    });
+          }
+    }
+}
+
+
+
+$(window).resize(function() {
+runifwide($(window).width());
+});
+    $(document).ready(function(){
+runifwide($(window).width());
+   });
+
+
+</script></div></div><a class="w3-btn-floating-large w3-red" id="marrowd" onclick="scrollD()" style="position: fixed;bottom:5%;right:20px;"><i aria-hidden="true" class="fa fa-arrow-down"></i></a> <a class="w3-btn-floating-large w3-red" id="marrowu" onclick="scrollU()" style="position: fixed;bottom:5%;left:20px;"><i aria-hidden="true" class="fa fa-arrow-up"></i></a><script>
+function scrollD() {
+    window.scrollBy(0, 200);
+}
+
+function scrollU() {
+    window.scrollBy(0, -200);
+}
+
+</script></div><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41598098-4', 'auto');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100761964);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script><noscript>&lt;p&gt;&lt;img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100761964ns.gif" /&gt;&lt;/p&gt;</noscript><script type="text/javascript">
+
+   $(function() {
+$('.gall2 img').on( "lazyerror", function() {
+  $(this).parent().remove();
+});
+      });
+
+  </script><script>
+      function runifwide5(w) {
+
+   $("#minimap").width(w);
+
+
+    minimap.invalidateSize();
+
+
+
+}
+       $(window).resize(function() {
+runifwide5($("#mcont").width());
+});
+
+   $(function() {
+    runifwide5($("#mcont").width());
+});
+
+</script><script>
+
+
+
+
+    $(document).ready(function(){
+    $('div.leaflet-control-attribution').html('<a href="http://openstreetmap.org">OSM</a>, © <a href="http://mapio.net">Mapio.net <i class="fa fa-home"></i></a> ');
+
+
+
+
+
+$( "#marrowp" ).on( "click", function() {
+    var he = $( "#minimap" ).height()-100;
+    if (he>=100){
+
+       $(".container").animate({top: String(he) + 'px'});
+         $("#minimap").animate({height: String(he) + 'px'}, function(){
+         minimap.invalidateSize();
+    });
+
+
+
+    }
+
+});
+
+
+
+$( "#marrowm" ).on( "click", function() {
+    var he = $( "#minimap" ).height()+100;
+$(".container").animate({top: String(he) + 'px'});
+         $("#minimap").animate({height: String(he) + 'px'}, function(){
+         minimap.invalidateSize();
+    });
+
+});
+
+    });
+
+</script></body></html>
