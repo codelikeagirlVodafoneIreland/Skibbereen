@@ -15,5 +15,5 @@ Project 6: [Selfcare For Young Women](https://codelikeagirlvodafoneireland.githu
 
 Project 7: [WestCork](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Westcork/index.html)
 
-Project 8: [Selfcare For Young Women](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Aurelia_/aurelia_website.html)
+Project 8: [Aurelia](https://codelikeagirlvodafoneireland.github.io/Skibbereen/Aurelia_/aurelia_website.html)
 
